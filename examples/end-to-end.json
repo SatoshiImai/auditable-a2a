@@ -1,0 +1,624 @@
+{
+  "pairing": {
+    "client": "py",
+    "host": "py",
+    "agent": "ts"
+  },
+  "a2a": [
+    {
+      "request": {
+        "A2A-Extensions": "https://timberlandchapel.com/a2a/extensions/auditable-a2a/0.1",
+        "body": {
+          "method": "SendMessage",
+          "params": {
+            "message": {
+              "messageId": "1411b048-0ece-40f6-ab27-7c29b9f6de4e",
+              "role": "ROLE_USER",
+              "parts": [
+                {
+                  "text": "Reconcile the September settlement report against the ledger."
+                }
+              ]
+            },
+            "configuration": {},
+            "metadata": {
+              "https://timberlandchapel.com/a2a/extensions/auditable-a2a/0.1": {
+                "auditRequest": {
+                  "hostKeys": "https://127.0.0.1:43963/keys.json",
+                  "sessionId": "6b421d64-2703-4d69-a5cf-2269a07a74b5",
+                  "level": "L2",
+                  "expiresAt": "2026-10-16T16:52:43Z",
+                  "auditEndpoint": {
+                    "url": "https://127.0.0.1:43963/a2a",
+                    "authentication": {
+                      "scheme": "Bearer",
+                      "credentials": "<credential>"
+                    }
+                  },
+                  "countersign": "host"
+                }
+              }
+            }
+          },
+          "id": "325061f5-59c9-43db-8855-e865155f2f10",
+          "jsonrpc": "2.0"
+        }
+      },
+      "response": {
+        "A2A-Extensions": "https://timberlandchapel.com/a2a/extensions/auditable-a2a/0.1",
+        "body": {
+          "jsonrpc": "2.0",
+          "id": "325061f5-59c9-43db-8855-e865155f2f10",
+          "result": {
+            "task": {
+              "id": "0f40c628-582b-40dd-a002-2a615777fe48",
+              "contextId": "118ed67f-8d2e-4c63-82b7-2906ed8bdd2a",
+              "status": {
+                "state": "TASK_STATE_AUTH_REQUIRED",
+                "message": {
+                  "messageId": "57309760-0c9c-4a34-b641-07c9bbba3ea0",
+                  "contextId": "118ed67f-8d2e-4c63-82b7-2906ed8bdd2a",
+                  "taskId": "0f40c628-582b-40dd-a002-2a615777fe48",
+                  "role": "ROLE_AGENT",
+                  "parts": [
+                    {
+                      "text": "The next step cannot be recorded in your audit ledger, so it has not been taken."
+                    }
+                  ],
+                  "metadata": {
+                    "https://timberlandchapel.com/a2a/extensions/auditable-a2a/0.1": {
+                      "auditStatus": {
+                        "reason": "host-unavailable",
+                        "httpStatus": 503,
+                        "attemptId": "f140e312-095a-4e75-a36f-0b1ebc37a8bf"
+                      }
+                    }
+                  }
+                },
+                "timestamp": "2026-10-15T16:52:43.947Z"
+              },
+              "history": [
+                {
+                  "messageId": "1411b048-0ece-40f6-ab27-7c29b9f6de4e",
+                  "role": "ROLE_USER",
+                  "parts": [
+                    {
+                      "text": "Reconcile the September settlement report against the ledger."
+                    }
+                  ]
+                },
+                {
+                  "messageId": "57309760-0c9c-4a34-b641-07c9bbba3ea0",
+                  "contextId": "118ed67f-8d2e-4c63-82b7-2906ed8bdd2a",
+                  "taskId": "0f40c628-582b-40dd-a002-2a615777fe48",
+                  "role": "ROLE_AGENT",
+                  "parts": [
+                    {
+                      "text": "The next step cannot be recorded in your audit ledger, so it has not been taken."
+                    }
+                  ],
+                  "metadata": {
+                    "https://timberlandchapel.com/a2a/extensions/auditable-a2a/0.1": {
+                      "auditStatus": {
+                        "reason": "host-unavailable",
+                        "httpStatus": 503,
+                        "attemptId": "f140e312-095a-4e75-a36f-0b1ebc37a8bf"
+                      }
+                    }
+                  }
+                }
+              ],
+              "metadata": {
+                "https://timberlandchapel.com/a2a/extensions/auditable-a2a/0.1": {
+                  "auditSession": {
+                    "sessionId": "6b421d64-2703-4d69-a5cf-2269a07a74b5",
+                    "level": "L2",
+                    "countersign": "host"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "request": {
+        "A2A-Extensions": "https://timberlandchapel.com/a2a/extensions/auditable-a2a/0.1",
+        "body": {
+          "method": "SendMessage",
+          "params": {
+            "message": {
+              "messageId": "e0df6fe5-117c-43d9-ad86-7cecbc365304",
+              "contextId": "118ed67f-8d2e-4c63-82b7-2906ed8bdd2a",
+              "taskId": "0f40c628-582b-40dd-a002-2a615777fe48",
+              "role": "ROLE_USER",
+              "parts": [
+                {
+                  "text": "The audit host is restored."
+                }
+              ]
+            },
+            "configuration": {}
+          },
+          "id": "9b043e7e-fc67-4fc9-851a-ceddb8ac6bf0",
+          "jsonrpc": "2.0"
+        }
+      },
+      "response": {
+        "A2A-Extensions": "https://timberlandchapel.com/a2a/extensions/auditable-a2a/0.1",
+        "body": {
+          "jsonrpc": "2.0",
+          "id": "9b043e7e-fc67-4fc9-851a-ceddb8ac6bf0",
+          "result": {
+            "task": {
+              "id": "0f40c628-582b-40dd-a002-2a615777fe48",
+              "contextId": "118ed67f-8d2e-4c63-82b7-2906ed8bdd2a",
+              "status": {
+                "state": "TASK_STATE_COMPLETED",
+                "message": {
+                  "messageId": "d8ede629-9d2a-4efc-9bd0-e4fa1d58f41b",
+                  "contextId": "118ed67f-8d2e-4c63-82b7-2906ed8bdd2a",
+                  "taskId": "0f40c628-582b-40dd-a002-2a615777fe48",
+                  "role": "ROLE_AGENT",
+                  "parts": [
+                    {
+                      "text": "Reconciled: 3 entries differ."
+                    }
+                  ]
+                }
+              },
+              "history": [
+                {
+                  "messageId": "1411b048-0ece-40f6-ab27-7c29b9f6de4e",
+                  "role": "ROLE_USER",
+                  "parts": [
+                    {
+                      "text": "Reconcile the September settlement report against the ledger."
+                    }
+                  ]
+                },
+                {
+                  "messageId": "57309760-0c9c-4a34-b641-07c9bbba3ea0",
+                  "contextId": "118ed67f-8d2e-4c63-82b7-2906ed8bdd2a",
+                  "taskId": "0f40c628-582b-40dd-a002-2a615777fe48",
+                  "role": "ROLE_AGENT",
+                  "parts": [
+                    {
+                      "text": "The next step cannot be recorded in your audit ledger, so it has not been taken."
+                    }
+                  ],
+                  "metadata": {
+                    "https://timberlandchapel.com/a2a/extensions/auditable-a2a/0.1": {
+                      "auditStatus": {
+                        "reason": "host-unavailable",
+                        "httpStatus": 503,
+                        "attemptId": "f140e312-095a-4e75-a36f-0b1ebc37a8bf"
+                      }
+                    }
+                  }
+                },
+                {
+                  "messageId": "e0df6fe5-117c-43d9-ad86-7cecbc365304",
+                  "contextId": "118ed67f-8d2e-4c63-82b7-2906ed8bdd2a",
+                  "taskId": "0f40c628-582b-40dd-a002-2a615777fe48",
+                  "role": "ROLE_USER",
+                  "parts": [
+                    {
+                      "text": "The audit host is restored."
+                    }
+                  ]
+                },
+                {
+                  "messageId": "d8ede629-9d2a-4efc-9bd0-e4fa1d58f41b",
+                  "contextId": "118ed67f-8d2e-4c63-82b7-2906ed8bdd2a",
+                  "taskId": "0f40c628-582b-40dd-a002-2a615777fe48",
+                  "role": "ROLE_AGENT",
+                  "parts": [
+                    {
+                      "text": "Reconciled: 3 entries differ."
+                    }
+                  ]
+                }
+              ],
+              "metadata": {
+                "https://timberlandchapel.com/a2a/extensions/auditable-a2a/0.1": {
+                  "auditSession": {
+                    "sessionId": "6b421d64-2703-4d69-a5cf-2269a07a74b5",
+                    "level": "L2",
+                    "countersign": "host"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  ],
+  "audit": [
+    {
+      "submission": {
+        "taskId": "0f40c628-582b-40dd-a002-2a615777fe48",
+        "event": {
+          "spec_version": "auditable-mcp/0.4",
+          "session_id": "6b421d64-2703-4d69-a5cf-2269a07a74b5",
+          "id": "4a859ae8-0bd7-429a-846d-c6af9bb77f4b",
+          "ts": "2026-10-15T16:52:43.831Z",
+          "action_type": "ledger.read",
+          "mutates": false,
+          "egress": false,
+          "target_resource": {
+            "kind": "ledger",
+            "ref": "general-ledger/2026-09"
+          },
+          "outcome": "attempted",
+          "action_context": {
+            "period": "2026-09"
+          },
+          "key_id": "https://127.0.0.1:45179/jwks.json#a1",
+          "signer_seq": 0,
+          "signature": "inWbjOV5OgEDdHNeJqNV08llErliPI2Kl9znCQTLDXYzwCYXl15KLXBsOhgotpkXecLcAN3O0bMXYrq0VRWyCg"
+        }
+      },
+      "status": 200,
+      "answer": {
+        "status": "accept",
+        "seq": 0,
+        "record_hash": "73fc6d5bc92fe5e3ec72075c7b4a4487914223f2390fed0d2c017bd1d87ebf26",
+        "host_ts": "2026-10-15T16:52:43.858Z",
+        "previous_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+        "host_signature": "Y65QK7J4hNh-5CkHg0eUB0_eWnIaemLnI8avRF2p0hT7c13KKc_Qcugn2m02mNCa_wqn-DLSV4p0uzXjDO-vAA",
+        "host_key_id": "https://127.0.0.1:43963/keys.json#h1",
+        "log_id": "walk-client"
+      }
+    },
+    {
+      "submission": {
+        "taskId": "0f40c628-582b-40dd-a002-2a615777fe48",
+        "event": {
+          "spec_version": "auditable-mcp/0.4",
+          "session_id": "6b421d64-2703-4d69-a5cf-2269a07a74b5",
+          "id": "4a859ae8-0bd7-429a-846d-c6af9bb77f4b",
+          "ts": "2026-10-15T16:52:43.916Z",
+          "action_type": "ledger.read",
+          "mutates": false,
+          "egress": false,
+          "target_resource": {
+            "kind": "ledger",
+            "ref": "general-ledger/2026-09"
+          },
+          "outcome": "success",
+          "action_context": {
+            "period": "2026-09"
+          },
+          "key_id": "https://127.0.0.1:45179/jwks.json#a1",
+          "signer_seq": 1,
+          "signature": "8LHdOq23BEcKtM-WwBC0dssF_C9gGRv-LZ-3McU6VOBoEx5UHnJYw9aDroTYXXqBAK_9jSeKckKus8wEOMO_CA"
+        }
+      },
+      "status": 204,
+      "answer": null
+    },
+    {
+      "submission": {
+        "taskId": "0f40c628-582b-40dd-a002-2a615777fe48",
+        "event": {
+          "spec_version": "auditable-mcp/0.4",
+          "session_id": "6b421d64-2703-4d69-a5cf-2269a07a74b5",
+          "id": "f140e312-095a-4e75-a36f-0b1ebc37a8bf",
+          "ts": "2026-10-15T16:52:43.928Z",
+          "action_type": "report.fetch",
+          "mutates": false,
+          "egress": false,
+          "target_resource": {
+            "kind": "document",
+            "ref": "settlement-report/2026-09"
+          },
+          "outcome": "attempted",
+          "action_context_salted_hash": "YBMD47unhJRijtPZidRe7Ha-TB1vLIerD7uphrB50_c",
+          "key_id": "https://127.0.0.1:45179/jwks.json#a1",
+          "signer_seq": 2,
+          "signature": "oz7EoKFfDx8HBk480u26q-voksEXQYuBEdWXYJwOfuxx6DXThI_esQ-O2QbURdeSgw---cbUGHONoIfj_eLLBQ"
+        }
+      },
+      "status": 503,
+      "answer": null
+    },
+    {
+      "submission": {
+        "taskId": "0f40c628-582b-40dd-a002-2a615777fe48",
+        "event": {
+          "spec_version": "auditable-mcp/0.4",
+          "session_id": "6b421d64-2703-4d69-a5cf-2269a07a74b5",
+          "id": "f140e312-095a-4e75-a36f-0b1ebc37a8bf",
+          "ts": "2026-10-15T16:52:43.935Z",
+          "action_type": "report.fetch",
+          "mutates": false,
+          "egress": false,
+          "target_resource": {
+            "kind": "document",
+            "ref": "settlement-report/2026-09"
+          },
+          "outcome": "aborted",
+          "reason": "host-unavailable",
+          "action_context_salted_hash": "YBMD47unhJRijtPZidRe7Ha-TB1vLIerD7uphrB50_c",
+          "key_id": "https://127.0.0.1:45179/jwks.json#a1",
+          "signer_seq": 3,
+          "signature": "RdcOsIUVP-ii17nhXafaP87HZPPTa7LIslbd7mVwtwqBS3-m1Foq0x24z0y_OfIfOExLekz9aNIpRAuq6RwoBw"
+        }
+      },
+      "status": 204,
+      "answer": null
+    },
+    {
+      "submission": {
+        "taskId": "0f40c628-582b-40dd-a002-2a615777fe48",
+        "event": {
+          "spec_version": "auditable-mcp/0.4",
+          "session_id": "6b421d64-2703-4d69-a5cf-2269a07a74b5",
+          "id": "5543e195-4ec2-46b3-9643-217fc83b0b97",
+          "ts": "2026-10-15T16:52:43.957Z",
+          "action_type": "report.fetch",
+          "mutates": false,
+          "egress": false,
+          "target_resource": {
+            "kind": "document",
+            "ref": "settlement-report/2026-09"
+          },
+          "outcome": "attempted",
+          "action_context_salted_hash": "c261OUdahb3PMoTjETsFYdUL6VhzGaIEjmrX1qnyjjY",
+          "key_id": "https://127.0.0.1:45179/jwks.json#a1",
+          "signer_seq": 4,
+          "signature": "mw2jZL91ZVxTmCWm1rQ8S9kLwTr0rp5LTSszDEY5JrybcS-KgwDtaHlGbbmBBEFUdNtGKGGSmIPjrEqemaxnBA"
+        }
+      },
+      "status": 200,
+      "answer": {
+        "status": "accept",
+        "seq": 3,
+        "record_hash": "ace804e1a6bd9857e12ac25bfc21dc878ae8fc86c634b288043c9f3b2f7ab2f3",
+        "host_ts": "2026-10-15T16:52:43.964Z",
+        "previous_hash": "37d247dd911e8908d74dafd532a7ca177d082f1e4e34daf95a252a8d8f87e220",
+        "host_signature": "VsFptUNGfbyHhFAv0-MEhQYTtArxIeapm-tyaKXRTy3HFNh9eoXBbxXC14jc6zmsXlGTng-TDUklR1JOb3QVCQ",
+        "host_key_id": "https://127.0.0.1:43963/keys.json#h1",
+        "log_id": "walk-client"
+      }
+    },
+    {
+      "submission": {
+        "taskId": "0f40c628-582b-40dd-a002-2a615777fe48",
+        "event": {
+          "spec_version": "auditable-mcp/0.4",
+          "session_id": "6b421d64-2703-4d69-a5cf-2269a07a74b5",
+          "id": "5543e195-4ec2-46b3-9643-217fc83b0b97",
+          "ts": "2026-10-15T16:52:44.022Z",
+          "action_type": "report.fetch",
+          "mutates": false,
+          "egress": false,
+          "target_resource": {
+            "kind": "document",
+            "ref": "settlement-report/2026-09"
+          },
+          "outcome": "success",
+          "action_context_salted_hash": "c261OUdahb3PMoTjETsFYdUL6VhzGaIEjmrX1qnyjjY",
+          "key_id": "https://127.0.0.1:45179/jwks.json#a1",
+          "signer_seq": 5,
+          "signature": "vmtPGk-Mm1IdRSivq5lzKzoZH3q1A8WWke2YpRtgC7krEvWl8dpGW4Zg_J6yc1lyQLZUfQpVMAg2L2WpZr7zCg"
+        }
+      },
+      "status": 204,
+      "answer": null
+    },
+    {
+      "submission": {
+        "taskId": "0f40c628-582b-40dd-a002-2a615777fe48",
+        "close": true
+      },
+      "status": 204,
+      "answer": null
+    }
+  ],
+  "ledger": {
+    "records": [
+      {
+        "event": {
+          "spec_version": "auditable-mcp/0.4",
+          "session_id": "6b421d64-2703-4d69-a5cf-2269a07a74b5",
+          "id": "4a859ae8-0bd7-429a-846d-c6af9bb77f4b",
+          "ts": "2026-10-15T16:52:43.831Z",
+          "action_type": "ledger.read",
+          "mutates": false,
+          "egress": false,
+          "target_resource": {
+            "kind": "ledger",
+            "ref": "general-ledger/2026-09"
+          },
+          "outcome": "attempted",
+          "action_context": {
+            "period": "2026-09"
+          },
+          "key_id": "https://127.0.0.1:45179/jwks.json#a1",
+          "signer_seq": 0,
+          "signature": "inWbjOV5OgEDdHNeJqNV08llErliPI2Kl9znCQTLDXYzwCYXl15KLXBsOhgotpkXecLcAN3O0bMXYrq0VRWyCg"
+        },
+        "seq": 0,
+        "host_ts": "2026-10-15T16:52:43.858Z",
+        "previous_hash": "0000000000000000000000000000000000000000000000000000000000000000",
+        "record_hash": "73fc6d5bc92fe5e3ec72075c7b4a4487914223f2390fed0d2c017bd1d87ebf26",
+        "host_signature": "Y65QK7J4hNh-5CkHg0eUB0_eWnIaemLnI8avRF2p0hT7c13KKc_Qcugn2m02mNCa_wqn-DLSV4p0uzXjDO-vAA",
+        "host_key_id": "https://127.0.0.1:43963/keys.json#h1",
+        "log_id": "walk-client"
+      },
+      {
+        "event": {
+          "spec_version": "auditable-mcp/0.4",
+          "session_id": "6b421d64-2703-4d69-a5cf-2269a07a74b5",
+          "id": "4a859ae8-0bd7-429a-846d-c6af9bb77f4b",
+          "ts": "2026-10-15T16:52:43.916Z",
+          "action_type": "ledger.read",
+          "mutates": false,
+          "egress": false,
+          "target_resource": {
+            "kind": "ledger",
+            "ref": "general-ledger/2026-09"
+          },
+          "outcome": "success",
+          "action_context": {
+            "period": "2026-09"
+          },
+          "key_id": "https://127.0.0.1:45179/jwks.json#a1",
+          "signer_seq": 1,
+          "signature": "8LHdOq23BEcKtM-WwBC0dssF_C9gGRv-LZ-3McU6VOBoEx5UHnJYw9aDroTYXXqBAK_9jSeKckKus8wEOMO_CA"
+        },
+        "seq": 1,
+        "host_ts": "2026-10-15T16:52:43.923Z",
+        "previous_hash": "73fc6d5bc92fe5e3ec72075c7b4a4487914223f2390fed0d2c017bd1d87ebf26",
+        "record_hash": "1d631e328f9bef36055c0d46f83f80286920481798a2efe6769c1710c714a615",
+        "host_signature": "PyiZBlYOLel6kLtOLlgPzstTAsApo2TjOZriG02RyZL2QRxLSjcIm72c3r6AfphN2-P2xeUcTZNeuUfYw8BRCw",
+        "host_key_id": "https://127.0.0.1:43963/keys.json#h1",
+        "log_id": "walk-client"
+      },
+      {
+        "event": {
+          "spec_version": "auditable-mcp/0.4",
+          "session_id": "6b421d64-2703-4d69-a5cf-2269a07a74b5",
+          "id": "f140e312-095a-4e75-a36f-0b1ebc37a8bf",
+          "ts": "2026-10-15T16:52:43.935Z",
+          "action_type": "report.fetch",
+          "mutates": false,
+          "egress": false,
+          "target_resource": {
+            "kind": "document",
+            "ref": "settlement-report/2026-09"
+          },
+          "outcome": "aborted",
+          "reason": "host-unavailable",
+          "action_context_salted_hash": "YBMD47unhJRijtPZidRe7Ha-TB1vLIerD7uphrB50_c",
+          "key_id": "https://127.0.0.1:45179/jwks.json#a1",
+          "signer_seq": 3,
+          "signature": "RdcOsIUVP-ii17nhXafaP87HZPPTa7LIslbd7mVwtwqBS3-m1Foq0x24z0y_OfIfOExLekz9aNIpRAuq6RwoBw"
+        },
+        "seq": 2,
+        "host_ts": "2026-10-15T16:52:43.942Z",
+        "previous_hash": "1d631e328f9bef36055c0d46f83f80286920481798a2efe6769c1710c714a615",
+        "record_hash": "37d247dd911e8908d74dafd532a7ca177d082f1e4e34daf95a252a8d8f87e220",
+        "host_signature": "MnlhyU_u_34tvGLqw8vXkXyoM2yDMRGcC9yw6dIu5X3a42iDM5RYIfiiIUTgyELKeOg8-jHDiFcurH6Iy9ayBw",
+        "host_key_id": "https://127.0.0.1:43963/keys.json#h1",
+        "log_id": "walk-client"
+      },
+      {
+        "event": {
+          "spec_version": "auditable-mcp/0.4",
+          "session_id": "6b421d64-2703-4d69-a5cf-2269a07a74b5",
+          "id": "5543e195-4ec2-46b3-9643-217fc83b0b97",
+          "ts": "2026-10-15T16:52:43.957Z",
+          "action_type": "report.fetch",
+          "mutates": false,
+          "egress": false,
+          "target_resource": {
+            "kind": "document",
+            "ref": "settlement-report/2026-09"
+          },
+          "outcome": "attempted",
+          "action_context_salted_hash": "c261OUdahb3PMoTjETsFYdUL6VhzGaIEjmrX1qnyjjY",
+          "key_id": "https://127.0.0.1:45179/jwks.json#a1",
+          "signer_seq": 4,
+          "signature": "mw2jZL91ZVxTmCWm1rQ8S9kLwTr0rp5LTSszDEY5JrybcS-KgwDtaHlGbbmBBEFUdNtGKGGSmIPjrEqemaxnBA"
+        },
+        "seq": 3,
+        "host_ts": "2026-10-15T16:52:43.964Z",
+        "previous_hash": "37d247dd911e8908d74dafd532a7ca177d082f1e4e34daf95a252a8d8f87e220",
+        "record_hash": "ace804e1a6bd9857e12ac25bfc21dc878ae8fc86c634b288043c9f3b2f7ab2f3",
+        "host_signature": "VsFptUNGfbyHhFAv0-MEhQYTtArxIeapm-tyaKXRTy3HFNh9eoXBbxXC14jc6zmsXlGTng-TDUklR1JOb3QVCQ",
+        "host_key_id": "https://127.0.0.1:43963/keys.json#h1",
+        "log_id": "walk-client"
+      },
+      {
+        "event": {
+          "spec_version": "auditable-mcp/0.4",
+          "session_id": "6b421d64-2703-4d69-a5cf-2269a07a74b5",
+          "id": "5543e195-4ec2-46b3-9643-217fc83b0b97",
+          "ts": "2026-10-15T16:52:44.022Z",
+          "action_type": "report.fetch",
+          "mutates": false,
+          "egress": false,
+          "target_resource": {
+            "kind": "document",
+            "ref": "settlement-report/2026-09"
+          },
+          "outcome": "success",
+          "action_context_salted_hash": "c261OUdahb3PMoTjETsFYdUL6VhzGaIEjmrX1qnyjjY",
+          "key_id": "https://127.0.0.1:45179/jwks.json#a1",
+          "signer_seq": 5,
+          "signature": "vmtPGk-Mm1IdRSivq5lzKzoZH3q1A8WWke2YpRtgC7krEvWl8dpGW4Zg_J6yc1lyQLZUfQpVMAg2L2WpZr7zCg"
+        },
+        "seq": 4,
+        "host_ts": "2026-10-15T16:52:44.028Z",
+        "previous_hash": "ace804e1a6bd9857e12ac25bfc21dc878ae8fc86c634b288043c9f3b2f7ab2f3",
+        "record_hash": "b0103fadf9cd7016a0fe66d82f15aae61af72ebacb4cfd800d302c4a31295c52",
+        "host_signature": "kUspyzPI9_fV6r56UsOgAuDKBr5xvrp1lglyH4FCiojr_tkaqyNIYfJYKnwN3PGCcUjns8YSRRnpKJtJnT7qAg",
+        "host_key_id": "https://127.0.0.1:43963/keys.json#h1",
+        "log_id": "walk-client"
+      }
+    ],
+    "sessions": [
+      {
+        "sessionId": "6b421d64-2703-4d69-a5cf-2269a07a74b5",
+        "version": "https://timberlandchapel.com/a2a/extensions/auditable-a2a/0.1",
+        "level": "L2",
+        "countersign": "host",
+        "attestationKeys": "https://127.0.0.1:45179/jwks.json",
+        "keySnapshot": {
+          "keys": [
+            {
+              "kid": "a1",
+              "kty": "OKP",
+              "crv": "Ed25519",
+              "alg": "Ed25519",
+              "x": "4XjiZp1uzL9FBuD8Q2KKcSROtUgR94uiJawFIjgRhKw"
+            }
+          ]
+        },
+        "boundKeyId": "https://127.0.0.1:45179/jwks.json#a1",
+        "end": {
+          "cause": "close",
+          "at": "2026-10-15T16:52:44.038Z",
+          "lastSeq": 4
+        },
+        "anomalies": [
+          {
+            "id": "f140e312-095a-4e75-a36f-0b1ebc37a8bf",
+            "kind": "signer-seq-gap",
+            "detail": "expected signer_seq 2, got 3"
+          }
+        ]
+      }
+    ],
+    "hostKeys": "https://127.0.0.1:43963/keys.json",
+    "hostKeySnapshot": {
+      "keys": [
+        {
+          "kid": "h1",
+          "kty": "OKP",
+          "crv": "Ed25519",
+          "alg": "Ed25519",
+          "x": "qgiLe16X8yTwYCWnZDxsYaQz5E-PJ5C6qdo6BWjzKoQ"
+        }
+      ]
+    }
+  },
+  "verification": {
+    "python": {
+      "complete": true,
+      "findings": [],
+      "unchecked": []
+    },
+    "typescript": {
+      "complete": true,
+      "findings": [],
+      "unchecked": [],
+      "amcpIssues": []
+    }
+  }
+}
